@@ -1,0 +1,85 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font-weight: normal;
+vertical-align: baseline;
+/* box-sizing: border-box; */}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+display: block;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: none;}
+table {border-collapse: collapse;border-spacing: 0;}
+a {color: #7e8c8d;text-decoration: none;}
+li {list-style: none;}
+/* ::-webkit-scrollbar {width: 5px;height: 5px;} */
+/* ::-webkit-scrollbar-track-piece {background-color: rgba(0, 0, 0, 0.2);} */
+/* ::-webkit-scrollbar-thumb:vertical {height: 5px;background-color: rgba(125, 125, 125, 0.7);} */
+/* ::-webkit-scrollbar-thumb:horizontal {width: 5px;background-color: rgba(125, 125, 125, 0.7);} */
+html, body {width: 100%;}
+body {-webkit-text-size-adjust: none;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+i,em {font-style: normal;}
+
+
+
+.miaosha_icon {position: absolute;left: 185px;top: 15px;height: 26px;width: 56px;padding-left: 13px;border-left: 1px soild #b1191a;}
+#logo::after {content: '';position: absolute;top: 38px;left: 185px;height: 32px;width: 1px;background-color: #b1191a;}
+.header_3 {height: 45px;line-height: 45px;border-bottom: 2px solid #b1191a;}
+.header_3 ul li {float: left;margin-left: 50px;}
+.header_3 ul li:nth-child(1) {margin-left: 28px;}
+.header_3 ul li:nth-child(-n+3) a {font-size: 16px;color: #000;font-weight: 700;}
+.header_3 ul li:nth-child(n+4) a {font-size: 16px;color: #666; }
+.header_3 ul li:nth-child(5) a{color: #b73738;}
+
+.list_bd .sell_list em{display: block;}
+.list_bd .sell_list ul {overflow: hidden;clear: both;}
+.list_bd .sell_list ul li {float: left;width: 190px;height: 290px;border: 1px solid #ffffff;padding: 20px;}
+.list_bd .sell_list ul li:hover {border-color: blue;}
+.list_bd .sell_list ul li:nth-child(4n) {margin-right: 0;}
+.list_bd .sell_list ul li h5 {font-size: 14px;color: #000;padding-left: 10px;padding-bottom: 10px;}
+.list_bd .sell_list ul li .press {color: #e60012;padding-left: 10px;font-size: 22px;font-weight: 600;}
+.list_bd .sell_list ul li .press span {color: #b2b2b2;text-decoration: line-through;}
+.list_bd .sell_list ul li p {color: rgb(0, 0, 0);display: inline-block;font-size: 14px;padding-top: 10px;padding-bottom: 10px;}
+.list_bd .sell_list ul li .jindutiao {position:absolute ;display: inline-block;height: 12px;width: 132px;background-color: #ed282e;border-top-left-radius: 4px;border-bottom-left-radius: 4px;margin: 0;}
+.list_bd .sell_list ul li .jindutiao_bor {position: relative;display: inline-block;border-radius: 4px;height: 12px;width: 145px;background-color: #fff;border: 1px solid #ed282e;}
+.list_bd .sell_list ul li .shengyu {color: #e60012;}
+.qianggou {width: 190px;height: 50px;background-color: #b1191a;color: #fff;}
+
+.good-choice{padding:10px 40px ;background-color: white;width: 100%;height: 150px;}
+.good-choice table tr{border-bottom:1px solid gray ;}
+.good-choice table{width: 100%; height: 100%;font-size: 13px;}
+.good-choice table tr{border-bottom: 1px solid rgb(209, 208, 208) ;}
+.good-choice table tr td{vertical-align: middle;}
+.good-choice table tr td a{padding-left: 10px;padding-right: 40px;}
+.good-choice table tr td a{color:rgb(40, 130, 182);text-decoration:none;}
+.good-choice table tr td a:hover{color: indianred; text-decoration:none;}
+.good-choice table tr .head-td{font-weight: bolder; width: 5%;background-color: silver; border-right: 1px solid rgb(209, 208, 208);}
+.search-ul li a{color: white;}
+
+.goods{display: block;height: 1130px; margin:0 20px;}
+.goods img{width: 190px;height: auto;} 
+.good-top{display: block;background-color: rgb(207, 207, 207);width: 100%;height: 40px;}
+.good-top .top-l{float: left; margin-left: 40px;margin-top: 10px; }
+.good-top .top-r{float: right;width: 300px;margin-top: 10px;margin-right: 10px;}
+.good-top .top-r button{width: 40px;}
+.good-top input{width: 40px;height: 20px;}
+.paging{width: 800px;height: 70px;margin: 0 auto;padding: 30px;}
+
+
+

@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*********个人消息*********/
+.personal{ margin:20px auto 0;}
+.personal-left{ width:216px;border:1px solid #ffffff;}
+.personal-l-tit{ height:45px; background:#63A61D;}
+.personal-l-tit h3{ font-weight:normal; font-size:16px; color:#fff; margin-left:15px; line-height:45px;}
+.personal-left ul{ padding:0 5px;background-color: white;}
+.personal-left li{ height:46px; line-height:46px; border-bottom:1px solid #DEDEDE;}
+.personal-left li a{ display:block; padding-left:50px; font-size:14px; color:#1E1E1E;}
+.personal-left .current-li a{color:#63A61D;}
+.personal-left li:hover a{color:#63A61D;}
+.personal-left li a span{ font-family:"宋体"; float:right; margin-right:15px;}
+
+
+.personal-r{ width:963px; height: 650px;}
+.personal-right{background-color: white; border:1px solid #DEDEDE; padding-bottom:15px;}
+.personal-r-tit{height:44px; border-bottom:1px solid #dedede; background:#F7F7F7; }
+.personal-r-tit h3{ line-height:44px; font-weight:normal; font-size:14px; color:#000; margin-left:15px;}
+
+
+/*中心内容*/
+body .per_con{width: 1200px;height: 700px;margin: 0 auto;overflow: hidden;}
+
+
+
+/*编辑地址*/
+.add_tit{color: orangered;font-size: 13px;font-weight: bold;}
+form table{margin: 10px auto 30px 15px; font-size: 17px;}
+form table tr{height: 50px;}
+form table td #rec,#code,#tel{width: 195px; height: 30px;}
+
+.adreses table{ width: 100%; margin:0px;padding: 0px;border: 1px solid black;border-collapse:collapse;text-align: center;vertical-align: middle;}
+.adreses table thead{background-color: gainsboro;font-size: 14px;border-bottom: 1px solid black;}
+.adreses table tr{height: 40px;border-bottom: 1px solid;}
+.adreses table th{border-right: 1px solid black;width: 15%;}
+.adreses table th:nth-child(2){width: 40%;}
+.adreses table td{border-right: 1px solid black;}
+.adreses table td a{width: 50%;}
+.adreses table td span{margin: 0px 10px;}
+.adreses table td a:hover{color: red;}
+
+
+.hide{display: none;}
+.show{display: block;}
+
+
+/*弹窗*/
+#background {display: none;position: fixed;left: 0;top: 0;width: 100%;height: 100%;background-color: rgba(0,0,0,0.5);}
+.content{background-color: white;width: 700px;height: 500px;z-index: 1;margin: 5% auto;overflow: auto;border: 1px solid darkgrey;}
+.content #close{background-color: #e5e5e5;border-bottom: 1px solid darkgrey; padding: 5px;overflow: hidden;}
+.content #close div{font-size: 15px;padding-left: 5px;float: left;}
+.content #close span{width: 50px; float: right;font-size: 20px;text-align: center;}
+#div2{width: 100%;height: auto;}
+#div2 form{ text-align: left;font-size: 15px; width: 300px;height: 300px; margin-left:auto;margin-right: auto;}
+#div2 form textarea{width: 170px;}
+#div2 form input{margin-left: 40px;width: 170px;height: 30px;margin:20px auto 20px auto;}
+#div2 form span{margin-top: 10px;}
+
+
+
+
+
+
+
+

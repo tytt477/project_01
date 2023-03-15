@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="web——终">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/web.zip!/" />
+      <root url="jar://$PROJECT_DIR$/毕业成果.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,359 @@
+/*
+* @Author: Marte
+* @Date:   2018-03-09 18:06:53
+* @Last Modified by:   Marte
+* @Last Modified time: 2021-07-09 16:26:51
+*/
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+
+body,h1,h2,h3,h4,h5,h6{font:12px/160% arial,\5b8b\4f53 sans-serif;}
+body,p,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,hr{margin:0;padding:0;}
+a{text-decoration:none;color:black;}
+a img,:link img,:visited img{border:0;}
+ul,ol{list-style:none;}
+img{vertical-align:bottom;}
+
+/* Document
+   ========================================================================== */
+
+html {
+  font-family: sans-serif; /* 1 */
+  line-height: 1.15; /* 2 */
+  -ms-text-size-adjust: 100%; /* 3 */
+  -webkit-text-size-adjust: 100%; /* 3 */
+}
+
+body {
+  margin: 0;
+}
+
+/* article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+} */
+
+
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+
+figcaption,
+figure,
+main { /* 1 */
+  display: block;
+}
+
+
+figure {
+  margin: 1em 40px;
+}
+
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+
+a {
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
+}
+
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+b,
+strong {
+  font-weight: inherit;
+}
+
+
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+dfn {
+  font-style: italic;
+}
+
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+
+small {
+  font-size: 80%;
+}
+
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+
+audio,
+video {
+  display: inline-block;
+}
+
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+img {
+  border-style: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+
+button,
+html [type="button"], /* 1 */
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+
+progress {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+
+textarea {
+  overflow: auto;
+}
+
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+
+details, /* 1 */
+menu {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+
+
+canvas {
+  display: inline-block;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+.clear {zoom:1;}    /*==for IE6/7 Maxthon2==*/
+.clear::after {
+   clear:both;
+   content:'.';
+   display:block;
+   width: 0;
+   height: 0;
+   visibility:hidden;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0 0 30px 0;
+  padding: 0;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+nav ul li a {
+  display: block;
+  padding: 5px 20px;
+  color: #fff;
+  background-color: #32c896;
+}
+nav ul li a:hover {
+  color: #fff;
+  background-color: #238b68;
+}
+nav ul li a.active {
+  color: #fff;
+  background-color: #238b68;
+}
+/* haeder */
+.container{width: 1200px; margin: 0 auto; position: relative;}
+
+/* .header{
+    height: 600px;
+    position: relative;
+    background-color: #1D4698;   
+} */
+
+/* nav */
+.nav{margin-top:30px;margin-left: 360px;margin-bottom: 30px; width: 1200px; height: 50px; 
+position: absolute; top: 0; background-color: rgb(255,255,255); z-index:1;}
+/* .nav .logo{width: 165px; float: left;} */
+/* .nav .logo img{width: 100%; margin-top: 15px;} */
+.nav .menu{float: left; position: relative;}
+.nav .menu ul li{float: left; font-size: 18px; line-height: 50px; 
+width: 145px;text-align: center;}
+.selectedNav{font-weight:bold;}
+.nav .menu ul li:hover{font-weight:bold;}
+.bottomLine{
+    position: absolute;
+    left: 50px;
+    bottom:0;
+    height:4px;
+    background-color: #333;
+    transition: all 0.3s ease;
+    height: 2px;
+    width: 145px;
+}

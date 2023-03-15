@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="jar包1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/oa3/web/other/jar包/servlet-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/oa3/web/other/jar包/jsp-api.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

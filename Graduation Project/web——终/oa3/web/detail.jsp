@@ -1,0 +1,277 @@
+<%@ page import="com.bjpowernode.oa.bean.Book" %>
+<%@page contentType="text/html;charset=UTF-8"%>
+<%
+	Book b=(Book) request.getAttribute("book");
+%>
+<%
+	String pic_nm= (String) request.getAttribute("pic_nm");
+%>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="书吧,图书,网上书店" />
+    <title><%=b.getBk_nm()%>详情 </title>
+    <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/css/detail.css" />
+</head>
+
+<body>
+    <!--header-->
+    <div class="zl-header">
+        <div class="zl-hd w1200">
+            <p id="index_forehead" class="hd-p1 f-l">
+				<%  if(session.getAttribute("username")!=null){
+				%>
+				您好,<a href="<%=request.getContextPath()%>/address/list"><%=session.getAttribute("username")%></a>&nbsp;&nbsp;&nbsp;<a href="/oa/user/exit">[退出系统]</a>
+				<%
+				}else{
+				%>
+				<a href='login.jsp'>前往登陆</a>，没有账号？<a href="register.jsp">去注册</a>
+				<%
+					}
+				%>
+			</p>
+			<p class="hd-p2 f-r">
+				<a href="/oa/index.jsp">首页 </a><span>|</span>
+				<a href="<%=request.getContextPath()%>/user/car">我的购物车</a><span>|</span>
+				<a href="<%=request.getContextPath()%>/address/list">个人中心</a>
+			</p>
+            <div style="clear:both;"></div>
+        </div>
+    </div>
+	
+	
+	<div class="nav-box">
+	    <div class="nav-kuai w1200">
+	        <ul class="nav-font f-l">
+	            <li><a href="/oa/index.jsp">在线商城</a></li>
+	            <li><a href="/oa/goods.jsp">图书总览</a></li>
+	            <li><a href="<%=request.getContextPath()%>/user/car">购物车</a></li>
+	            <li><a href="<%=request.getContextPath()%>/address/list">个人中心</a></li>
+	            <li><a href="/oa/register.jsp">注册</a></li>
+	            <li><a href="mailto:821369049@qq.com">联系我们</a></li>
+	            <div style="clear:both;"></div>
+	        </ul>
+	        <div style="clear:both;"></div>
+	    </div>
+	</div>
+	
+	
+	<div class="detail_item">
+		<div class="detail_item_head">
+				<span class="head_left">商品详情</span>
+				<div class="head_right">
+					<span><a href="javascript:">关注店铺</a></span>
+					<img src="<%=request.getContextPath()%>/img/star.png">
+					<span>书吧旗舰店</span>
+				</div>
+		</div>
+			
+			
+		<div class="detail_body">
+			<div class="detail_body_img">
+				<img src="<%=request.getContextPath()%>/img/<%=b.getPic_nm()%>.jpg">
+			</div>
+			
+			<div class="detail_body_price">
+				<p><%=b.getBk_nm()%></p>
+				<p>价格：<strong><span>¥</span><%=b.getPri()%></strong></p>
+				<p>优惠券：<span>200-30</span></p>
+				<p>库存：<span>有货</span></p>
+				<p>重量：<span>1.075kg</span></p>
+				<p>服务支持：<span>七天无理由退货</span>
+				<span>可配送全国</span>
+				<span>极速退款</span>
+				<span>免运费</span></p>
+				<p>数量：
+				<div class="amount">
+					<a href="javascript:" class="minus">-</a><!--
+				--><input type="text" value="1" class="numberInput"><!--
+				--><a href="javascript:" class="plus">+</a>
+				<input type="submit" value="加入购物车" class="add_car">
+				</div>
+				</p>
+			</div>
+			
+			<div class="shop">
+				<div class="official_c"><strong>官方书店</strong></div>
+				<div class="official_e"><strong>ShuBa Book</strong></div>
+				<a href="mailto:821369049@qq.com"><div class="connect"><strong>联系客服</strong></div></a>
+			</div>
+		</div>
+		
+		<div class="detail_intro" id="form">
+			<div class="nav">
+				<ul>
+					<li class="oc_li">商品介绍</li>
+					<li>规格与包装</li>
+					<li>售后保障</li>
+					<li>商品评价</li>
+				</ul>
+			</div>
+			<div>
+				<div class="form_content">
+					<div class="nav_idv"><h3>商品介绍</h3></div>
+					<div class="nav_idv_con">
+						<table>
+							<tr>
+								<td>出版社：<%=b.getPub()%></td>
+								<td>ISBN:12345678</td>
+								<td>版次：1</td>
+								<td>商品编码：1231231</td>
+							</tr>
+							<tr>
+								<td>品牌：书吧</td>
+								<td>包装：平装</td>
+								<td>开本：16</td>
+								<td>出版时间：2022-5-1</td>
+							</tr>
+							<tr>
+								<td>纸质：胶版纸</td>
+								<td>字数：11223344</td>
+								<td>作者：<%=b.getAut()%></td>
+							</tr>
+						</table>
+						
+					</div>
+					<div >
+						<div class="nav_idv"><h3>商品参数</h3></div>
+						<img src="<%=request.getContextPath()%>/img/<%=b.getPic_nm()%>.jpg">
+					</div>
+				</div>
+				
+				<div class="form_content">
+					<div class="nav_idv"><h3>规格与包装</h3></div>
+					<div class="nav_idv_con">
+						<p>包装清单&nbsp;&nbsp;&nbsp;&nbsp;暂无</p>
+					</div>
+				</div>	
+				
+				
+				<div class="form_content">
+					<div class="nav_idv"><h3>售后保障</h3></div>
+					<div class="nav_idv_con">
+						<span style="color: purple;"><h3>正品行货</h3></span>
+						<p>商城向您保证所售商品均为正品行货，京东自营商品开具机打发票或电子发票。</p>
+						<span>无忧退货</span>
+						<p>客户购买京东自营商品7日内（含7日，自客户收到商品之日起计算），在保证商品完好的前提下，可无理由退货。（部分商品除外，详情请见各商品细则）</p>
+						<span style="color: purple;"><h3>权利声明</h3></span>
+						<p>所有商品信息、客户评价、商品咨询、网友讨论等内容，是京东重要的经营资源，未经许可，禁止非法转载使用。</p>
+						<p>注：本站商品信息均来自于合作方，其真实性、准确性和合法性由信息拥有者（合作方）负责。本站不提供任何保证，并不承担任何法律责任。印刷版次不同，印刷时间和版次以实物为准。</p>
+						<span style="color: purple;"><h3>价格说明</h3></span>
+						<p>京东价：价格为商品的销售价，是您最终决定是否购买商品的依据。
+						<p>划线价：商品展示的划横线价格为参考价，并非原价，该价格可能是品牌专柜标价、商品吊牌价或由品牌供应商提供的正品零售价（如厂商指导价、建议零售价等）或其他真实有依据的价格；由于地区、时间的差异性和市场行情波动，品牌专柜标价、商品吊牌价等可能会与您购物时展示的不一致，该价格仅供您参考。</p>
+						<p>折扣：如无特殊说明，折扣指销售商在原价、或划线价（如品牌专柜标价、商品吊牌价、厂商指导价、厂商建议零售价）等某一价格基础上计算出的优惠比例或优惠金额；如有疑问，您可在购买前联系销售商进行咨询。</p>
+						<p>异常问题：商品促销信息以商品详情页“促销”栏中的信息为准；商品的具体售价以订单结算页价格为准；如您发现活动商品售价或促销信息有异常，建议购买前先联系销售商咨询。</p>
+					</div>
+				</div>	
+				
+				
+				
+				<div class="form_content">
+					<div class="nav_idv"><h3>商品评价</h3></div>
+					<div class="nav_idv_con">暂无最新评价</div>
+				</div>	
+					
+			</div>
+		</div>
+	</div>
+
+<div class="foot" >
+    <div>
+        <div class="footer-box">
+            <div class="footer_bottom_down" style="text-align:center;">
+                <ul style="margin: 45px auto auto 160px;">
+                    <li><a href="#">联系我们</a></li>
+                    <li><a href="#">联系客服</a></li>
+                    <li><a href="#">商家入驻</a></li>
+                    <li><a href="#">营销中心</a></li>
+                    <li><a href="#">好书优购</a></li>
+                    <li><a href="#">友情链接</a></li>
+                    <li><a href="#">销售联盟</a></li>
+                    <li><a href="#">品牌社区</a></li>
+                    <li><a href="#">品牌公益</a></li>
+                    <li><a href="#">English Site</a></li>
+                    <li><a href="#">Contact U</a></li>
+                </ul>
+                <br>
+                <section class="address_tel_email">地址：浙江省杭州市钱塘新区白杨街道玉屏洲 邮编：100000 电话：400-XXX-4000 传真：010-xxxxxxx 邮箱:
+                    123456@qq.com</section>
+                <p class="address_tel_email">京ICP备00000000号京公网安备111111111111</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="<%=request.getContextPath()%>/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script>
+	~function () {
+	        var lis =document.getElementById("form").children[0].getElementsByTagName("li");
+	        console.log(lis);
+	        var form_contents = $(".form_content");
+	        console.log(form_contents);
+	        console.log(form_contents.length);
+	        for (var i = 0; i < lis.length; i++) {
+	            var liEle = lis[i];
+	            liEle.index = i;
+	            liEle.onclick = function () {
+	                for (var j = 0; j < lis.length; j++) {
+	                    var liLink = lis[j];
+	                    liLink.className = "";
+	                    form_contents[j].className = "form_contents hide";
+	                }
+	                this.className = "oc_li";
+	                form_contents[this.index].className = "form_contents show";
+	            }
+	        }
+	        
+	}();
+	function setMinusLinkState(row) {
+	
+	    var minus = row.find(".minus");
+	    var numberStr = row.find(".numberInput").val();
+	    var number = parseInt(numberStr);
+	    
+	    if(number ==1) {
+	        minus.addClass("disableLink");
+	        minus.text("");
+	    }
+	    else {
+	        minus.removeClass("disableLink");
+	        minus.text("-");
+	    }
+	}
+	$(document).ready(function () {
+        //“+”鼠标单击事件
+        $(".plus").click(function () {
+            //找到“数量”文本框
+            var numberInput = $(this).prev();
+            //文本框的数值加1
+            var numberStr = numberInput.val();
+            var number = parseInt(numberStr);
+            numberInput.val(number + 1);
+        });
+
+
+        //“-”鼠标单击事件
+        $(".minus").click(function () {
+            //找到“数量”文本框
+            var numberInput = $(this).next();
+            //文本框的数值减1
+            var numberStr = numberInput.val();
+            var number = parseInt(numberStr);
+
+            //当“数量”文本框的数量>=2时，点击“-”进行减1
+            if (number >= 2) {
+                numberInput.val(number - 1);
+            }
+        });
+	 });
+</script>
+</body>
+
+	
+</html>
